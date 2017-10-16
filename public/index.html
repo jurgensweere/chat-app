@@ -6,7 +6,24 @@
 </head>
 <body>
     <div class="container">
-        <ul class="list-group"></ul>
+        <div class="row">
+            <div class="col-9">
+                <div id="join">
+                    <form name="join">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter name">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Join</button>
+                    </form>
+                </div>
+
+                <ul class="list-group" id="messages"></ul>
+            </div>
+            <div class="col-3">
+                <ul id="users"></ul>
+            </div>
+        </div>
     </div>
 
     <footer class="footer">
