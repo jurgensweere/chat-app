@@ -5,6 +5,9 @@
     var userList = document.getElementById('users');
     var myName = '';
 
+    // Focus on user name input
+    document.querySelector('form[name=join] input').focus();
+
     document.forms["chat"].addEventListener("submit", function(e){
         e.preventDefault();
         var message = input.value;
@@ -27,6 +30,7 @@
             document.getElementById('join').style.display = "none";
             document.forms["chat"].style.display = "flex";
             connect(name);
+            input.focus();
         }
     });
 
